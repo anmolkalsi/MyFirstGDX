@@ -21,6 +21,10 @@ public class Paddle {
         this.player = new Rectangle (x,y,width,height);
     }
     
+    public Rectangle getBounds(){
+        return player;
+    }
+    
     public void moveUp(){
         player.y = player.y + speed;
     }

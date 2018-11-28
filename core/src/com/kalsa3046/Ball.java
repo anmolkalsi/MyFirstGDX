@@ -25,6 +25,10 @@ public class Ball {
         this.dx = 1;
         this.dy = 1;
     }
+    
+    public boolean collidesWith(Paddle p){
+        return shape.overlaps(p.getBounds());
+    }
 
     public void move() {
         shape.x = shape.x + speed * dx;
